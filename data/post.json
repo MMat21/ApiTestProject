@@ -1,0 +1,20 @@
+[
+  {
+    "title": "test1",
+    "body": "hello1",
+    "userId": 1,
+    "expected_id": 101
+  },
+  {
+     "title": "",
+    "body": "hello2",
+    "userId": 2,
+    "expected_id": 101
+  },
+  {
+     "title": "test3",
+    "body": "hello3",
+    "userId": 3,
+    "expected_id": 101
+  }
+]

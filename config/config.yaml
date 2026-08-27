@@ -1,0 +1,8 @@
+env: test
+test:
+  base_url:
+   "https://jsonplaceholder.typicode.com"
+  httpbin_url:
+   "https://httpbin.org"
+  timeout:
+   10

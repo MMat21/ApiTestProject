@@ -236,6 +236,46 @@ reports/report.html
 - 失败原因
 - 测试日志
 
+## CI 持续集成
+
+项目使用 GitHub Actions 实现持续集成。
+
+每次向 `main` 分支 push 代码或提交 Pull Request 时，GitHub Actions 会自动：
+
+1. 拉取项目代码
+2. 配置 Python 3.12 环境
+3. 安装项目依赖
+4. 执行 pytest 自动化测试
+5. 生成 HTML 测试报告
+6. 保存测试报告 Artifact
+
+CI 流程：
+
+```text
+Git Push
+   ↓
+GitHub Actions
+   ↓
+Checkout Code
+   ↓
+Setup Python
+   ↓
+Install Dependencies
+   ↓
+Run pytest
+   ↓
+Generate HTML Report
+   ↓
+Upload Test Report
+```
+然后提交：
+
+```bash
+git add README.md
+git commit -m "完善项目CI文档"
+git push
+```
+
 ## 项目亮点
 
 - 基于 Python + pytest + requests 构建接口自动化测试框架
